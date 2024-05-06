@@ -16,14 +16,14 @@ const LogicAnswer = () => {
     switch (operation) {
       case 'MAYOR':
         setMin(count + 1);
-        setCount(getRandomIntInclusive(count, max));
+        setCount(getRandomIntInclusive(count + 1, max));
         break;
       case 'MENOR':
         setMax(count - 1);
-        setCount(getRandomIntInclusive(min, count));
+        setCount(getRandomIntInclusive(min  , count - 1));
         break;
       case 'IGUAL':
-        alert("Hello! I am an alert box!!");
+        alert("Ganaste brodelll");
         break;
       default:
         break;
